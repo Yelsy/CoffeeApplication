@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".editModule.CoffeeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding_default">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:text="Registro de usuario"
+            android:textColor="@color/red"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/signUpImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/coffee_cup"
+            android:transitionName="logoImageTrans"
+            android:layout_gravity="center"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usuarioSignUpTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/red"
+            app:boxStrokeColor="@color/red"
+            app:endIconTint="@color/red"
+            app:hintTextColor="@color/red"
+            app:startIconTint="@color/red"
+            android:transitionName="emailInputTextTrans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contrasenaTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:textColorHint="@color/red"
+            app:boxStrokeColor="@color/red"
+            android:transitionName="passwordInputTextTrans"
+            app:passwordToggleEnabled="true"
+            app:endIconTint="@color/red"
+            app:hintTextColor="@color/red"
+            app:startIconTint="@color/red"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordRegisterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:transitionName="buttonSignInTrans"
+            app:backgroundTint="@color/red" />
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:text="Already have an account"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

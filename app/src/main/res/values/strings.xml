@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Coffee Application</string>
+    <string name="description_img_photo">image coffee</string>
+    <string name="description_coffee_add">create coffee</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_name">name coffee</string>
+    <string name="helper_required">Requerido</string>
+    <string name="hint_phone">number phone</string>
+    <string name="hint_website">url website</string>
+    <string name="hint_photo_url">photo url</string>
+    <string name="coffee_title_add">create coffee</string>
+    <string name="menu_save">Save</string>
+    <string name="coffee_save">coffee added successfully</string>
+    <string name="coffee_update">Coffee update successfully</string>
+    <string name="title_edit">Editar Coffee</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_next">Login</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="error_no_resolve">no se puede llamar</string>
+    <string name="register_button">Sign in</string>
+</resources>
